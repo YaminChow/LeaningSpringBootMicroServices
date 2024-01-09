@@ -1,0 +1,16 @@
+
+J
+java:S5411B"(Use a primitive boolean expression here.(üêÒùÿÿÿÿ8×ÎâÎ1
+G	java:S106."+Replace this use of System.out by a logger.(ÈÁå8àÎâÎ1
+G	java:S106/"+Replace this use of System.out by a logger.(£ƒŒÔ8àÎâÎ1
+L	java:S106:"+Replace this use of System.out by a logger.(“¿¤åıÿÿÿÿ8áÎâÎ1
+G	java:S106;"+Replace this use of System.out by a logger.(ÿœáÙ8áÎâÎ1
+L	java:S106@"+Replace this use of System.out by a logger.(½¥«ıÿÿÿÿ8áÎâÎ1
+c
+java:S1128"ARemove this unused import 'org.springframework.http.HttpHeaders'.(ãŸñ×úÿÿÿÿ8šÆ³ãÎ1
+a
+java:S1128"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ8šÆ³ãÎ1
+h
+java:S1128"FRemove this unused import 'org.springframework.stereotype.Repository'.(¦ıÍıüÿÿÿÿ8šÆ³ãÎ1
+y
+java:S1128"WRemove this unused import 'org.springframework.web.reactive.function.client.WebClient'.(¬à•ıÿÿÿÿ8šÆ³ãÎ1

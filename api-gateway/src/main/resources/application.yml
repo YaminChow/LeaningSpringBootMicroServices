@@ -1,0 +1,55 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: PRODUCT-SERVICE
+            uri: lb://PRODUCT-SERVICE
+            predicates:
+              - Path=/api/products
+          - id: ORDER-SERVICE
+            uri: lb://ORDER-SERVICE
+            predicates:
+              - Path=/api/orders
+          - id: DISCOVER-SERVICE
+            uri: http://localhost:8761
+            predicates:
+              - Path=/eureka/web
+            filters:
+              - SetPath=/
+          - id: DISCOVER-SERVICE-STATIC
+            uri: http://localhost:8761
+            predicates:
+              - Path=/eureka/**
+
+logging:
+  level:
+    root: INFO
+
+    org:
+      springframework:
+        cloud:
+          gateway:
+            route:
+              RouteDefinitionLocator: INFO
+    org.springframework.cloud.gateway: TRACE
+
+
+
+
+
+
+
+
+
