@@ -1,0 +1,16 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(Çèëì8ñ¤Ã’Ï1
+j
+java:S5738&"HRemove this call to a deprecated method, it has been marked for removal.(õ‰Êøÿÿÿÿ8¶şÃ’Ï1
+j
+java:S5738-"HRemove this call to a deprecated method, it has been marked for removal.(ÑèÜøÿÿÿÿ8·şÃ’Ï1
+j
+java:S5738-"HRemove this call to a deprecated method, it has been marked for removal.(ÑèÜøÿÿÿÿ8¸şÃ’Ï1
+‚
+java:S1128"eRemove this unused import 'org.springframework.security.config.annotation.web.builders.HttpSecurity'.(ƒµ‹Š8ºşÃ’Ï1
+‘
+java:S1128"oRemove this unused import 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity'.(ŸÜÑıÿÿÿÿ8ºşÃ’Ï1
+n
+java:S1128	"QRemove this unused import 'org.springframework.security.web.SecurityFilterChain'.(Ï×ÜÌ8ºşÃ’Ï1
+}
+java:S1128"`Remove this unused import 'org.springframework.security.web.util.matcher.AntPathRequestMatcher'.(¼¸ö8ºşÃ’Ï1

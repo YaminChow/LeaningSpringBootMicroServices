@@ -55,3 +55,5 @@ Uapi-gateway/src/main/java/com/programmingtechie/apigateway/ApiGatewayApplicatio
 `product-service/src/main/java/com/programmingechie/productservice/ProductServiceApplication.java,d\1\d14cdaa20639163dca57d2c284fe2fdc48b3c125
 “
 cproduct-service/src/main/java/com/programmingechie/productservice/controller/ProductController.java,0\3\03681e6c6fa94b9d95c2205b25681e5f1bf32511
+d
+4api-gateway/src/main/java/config/SecuirtyConfig.java,a\e\aef849a23e579ef9611c3ad0c84add7288aea7a5

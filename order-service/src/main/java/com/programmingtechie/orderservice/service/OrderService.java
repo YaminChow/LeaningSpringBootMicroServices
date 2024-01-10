@@ -14,7 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.Arrays;
@@ -27,7 +26,7 @@ import java.util.UUID;
 public class OrderService {
     private final OrderRepository orderRepository;
     private final RestTemplate restTemplate;
-    public void placeOrder(OrderRequest orderRequest){
+    public String placeOrder(OrderRequest orderRequest){
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
 
@@ -43,11 +42,9 @@ public class OrderService {
         List<String> skuCodeList = order.getOrderLineItemList().stream()
                 .map(OrderLineItems::getSkuCode)
                 .toList();
-        System.out.println("Order service>>>> skuCodeList");
+
         skuCodeList.forEach(System.out::println);
         //call the inventory sevice when placeorder if the product is in stock or not
-
-
 
         InventoryResponse[] inventoryResponses = restTemplate.getForObject(UriComponentsBuilder
                 .fromUriString(URLConstants.INVENTORYENDPOINTS.getEndPointURL())
@@ -55,13 +52,11 @@ public class OrderService {
                 .build()
                 .toUriString(),InventoryResponse[].class);
 
-        System.out.println("Order service>>>> invertoryResponse");
         Arrays.stream(inventoryResponses).forEach(System.out::println);
 
         Boolean allProductInStock = Arrays.stream(inventoryResponses)
                 .allMatch(InventoryResponse::isInStock);
 
-        System.out.println("Order service>>>> all order inventory exist or not "+ allProductInStock);
 
         if(allProductInStock){
             orderRepository.save(order);
@@ -69,6 +64,7 @@ public class OrderService {
         else {
             throw new IllegalArgumentException("Product is out of stock, please try later.");
         }
+        return "Order place successful.";
     }
 
     private OrderLineItems mapToDto(OrderItemDto orderItemDto) {
