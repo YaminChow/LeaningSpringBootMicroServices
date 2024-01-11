@@ -57,3 +57,7 @@ Uapi-gateway/src/main/java/com/programmingtechie/apigateway/ApiGatewayApplicatio
 cproduct-service/src/main/java/com/programmingechie/productservice/controller/ProductController.java,0\3\03681e6c6fa94b9d95c2205b25681e5f1bf32511
 d
 4api-gateway/src/main/java/config/SecuirtyConfig.java,a\e\aef849a23e579ef9611c3ad0c84add7288aea7a5
+W
+'inventory-service/inventory-service.iml,4\6\4694c94f28c66eb17ee150c281eb44fc6e006df1
+Œ
+\inventory-service/src/main/java/com/programmingtechie/inventory/service/model/Inventory.java,c\3\c3b6c2462a95980138af50d7af25fd98e86f33a2

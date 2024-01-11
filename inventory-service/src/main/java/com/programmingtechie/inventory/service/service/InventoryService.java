@@ -20,9 +20,9 @@ public class InventoryService {
     @SneakyThrows
     public List<InventoryResponse> isInStock(List<String> skuCode){
         //Configure for timeout error
-        log.info("Start Waiting");
-        Thread.sleep(10000);
-        log.info("End waiting");
+//        log.info("Start Waiting");
+//        Thread.sleep(10000);
+//        log.info("End waiting");
 
 
 //        List<Inventory> inventory = inventoryRepository.findBySkuCodeIn(skuCode)

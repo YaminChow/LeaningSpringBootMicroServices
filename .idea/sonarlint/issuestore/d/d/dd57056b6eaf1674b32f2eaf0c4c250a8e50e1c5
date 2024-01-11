@@ -1,3 +1,10 @@
 
+]	java:S125"<This block of commented-out lines of code should be removed.(İÈ·çüÿÿÿÿ8ˆšÅ±Ï1
 k
 java:S1172"IRemove these unused method parameters "orderRequest", "runtimeException".(îÁ»…øÿÿÿÿ8»›·“Ï1
+y
+java:S1128"\Remove this unused import 'io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker'.(›èÌÇ8ŒšÅ±Ï1
+l
+java:S1128"JRemove this unused import 'io.github.resilience4j.retry.annotation.Retry'.(Ä³ß¾úÿÿÿÿ8ŒšÅ±Ï1
+x
+java:S1128"VRemove this unused import 'io.github.resilience4j.timelimiter.annotation.TimeLimiter'.(–Üòøÿÿÿÿ8šÅ±Ï1

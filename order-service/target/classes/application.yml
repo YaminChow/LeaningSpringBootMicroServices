@@ -15,6 +15,7 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
   application:
     name: ORDER-SERVICE
+
 eureka:
   client:
     serviceUrl:
@@ -30,6 +31,11 @@ management:
   endpoint:
     health:
       show-details: always
+  tracing:
+    sampling:
+      probability: 1.0
+
+
 
 ##Resilinece4j properties
 resilience4j:
