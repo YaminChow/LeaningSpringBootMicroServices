@@ -61,3 +61,15 @@ W
 'inventory-service/inventory-service.iml,4\6\4694c94f28c66eb17ee150c281eb44fc6e006df1
 å
 \inventory-service/src/main/java/com/programmingtechie/inventory/service/model/Inventory.java,c\3\c3b6c2462a95980138af50d7af25fd98e86f33a2
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+ê
+`order-service/src/main/java/com/programmingtechie/orderservice/event/orderNotificationEvent.java,a\0\a0a4d5941518576a51fcf3455f7c14880f427ed4
+K
+notifcation-service/pom.xml,d\8\d8a9413548be6c971ab789722e612bf92f7fdb8e
+ù
+mnotifcation-service/src/main/java/com/programmingtechie/notifcationservice/NotifcationServiceApplication.java,3\8\387a031d2bbb0707b0f01fa48d926277d5cacb0f
+ê
+`order-service/src/main/java/com/programmingtechie/orderservice/event/OrderNotificationEvent.java,a\a\aaf8a6357691b7f3cdbd475adb9bc35659cda4da
+ñ
+fnotifcation-service/src/main/java/com/programmingtechie/notifcationservice/OrderNotificationEvent.java,9\f\9f36d16e9febca05427cfaa75b66c1f7d6e06ce5

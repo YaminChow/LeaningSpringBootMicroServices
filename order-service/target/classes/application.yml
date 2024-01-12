@@ -15,7 +15,20 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
   application:
     name: ORDER-SERVICE
-
+  #Setup kafka property
+  kafka:
+    bootstrap-servers: localhost:19092
+    template:
+      default-topic: notificationTopic
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring:
+          json:
+            type:
+              mapping: event:com.programmingtechie.orderservice.event.OrderNotificationEvent
+              #key= event, value= com.programmingtechie.orderservice.event
 eureka:
   client:
     serviceUrl:
@@ -34,8 +47,6 @@ management:
   tracing:
     sampling:
       probability: 1.0
-
-
 
 ##Resilinece4j properties
 resilience4j:
@@ -61,4 +72,6 @@ resilience4j:
       inventory:
         max-attempts: 3
         wait-duration: 5s
+
+
 
