@@ -73,3 +73,7 @@ mnotifcation-service/src/main/java/com/programmingtechie/notifcationservice/Noti
 `order-service/src/main/java/com/programmingtechie/orderservice/event/OrderNotificationEvent.java,a\a\aaf8a6357691b7f3cdbd475adb9bc35659cda4da
 –
 fnotifcation-service/src/main/java/com/programmingtechie/notifcationservice/OrderNotificationEvent.java,9\f\9f36d16e9febca05427cfaa75b66c1f7d6e06ce5
+F
+api-gateway/Dockerfile,9\5\9548e2ce3bdfe112d8c757987e1beebc1ecab5ed
+G
+api-gateway/Dockerfiles,7\7\77ce322628d197c2c2ed4157feda3ab6539ded0d
